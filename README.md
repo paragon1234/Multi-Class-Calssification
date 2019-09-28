@@ -33,11 +33,11 @@ The image size of class 'aircraft' and 'none' is 20x20 pixels, while that of cla
 
 ### 2. Attempts to reduce overfitting in the model
 
-The model was trained and validated on different data sets to ensure that the model was not overfitting by train_validation_split (line 65). To reduce overfitting, early stopping is introduced thrrough callbacks (line 93-97). The model was tested on test dataset and the accuracy on test dataset is 100%.
+The model was trained and validated on different data sets to ensure that the model was not overfitting (achieved through train_validation_split: line 65). To reduce overfitting, early stopping is introduced through callbacks (line 93-97). The model was tested on test dataset and the accuracy on test dataset is 100%.
 
 ### 3. Model parameter tuning
 
-The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 66).
+The model used an adam optimizer, so the learning rate was not tuned manually (line 61).
 
 ### 4. Appropriate training data
 
@@ -45,7 +45,7 @@ Training/Test data is provided in the file "gnr638-mls4rs-a1.zip"
 
 I randomly shuffled the data set and put 30% of the data into a validation set. 
 
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was determined through early stopping using validation accuracy as the indicator.
+I used this training data for training the model. The validation set helped determine, if the model was over or under fitting. The ideal number of epochs is achieved through early stopping using validation accuracy as the indicator.
 
 ## Model Architecture and Training Strategy
 
