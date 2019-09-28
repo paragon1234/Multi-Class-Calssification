@@ -27,7 +27,7 @@ if K.image_data_format() == 'channels_first':
 else: 
     input_shape = (img_width, img_height, 3) 
   
-  
+# Model  
 model = Sequential() 
 model.add(Conv2D(32, (3, 3), input_shape = input_shape)) 
 model.add(BatchNormalization())
@@ -60,7 +60,8 @@ model.add(Dense(num_of_classes, activation='softmax'))
 model.compile(loss ='categorical_crossentropy', 
                      optimizer ='adam', 
                    metrics =['accuracy']) 
-  
+ 
+#Train/Validation/Test Generators
 train_datagen = ImageDataGenerator( rescale = 1. / 255,
                                   validation_split=validation_split) # set validation split)
 
