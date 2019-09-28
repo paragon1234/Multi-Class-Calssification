@@ -139,3 +139,14 @@ for i in range(nb_test_samples):
     temp[i] = [li[i], labels[i]]
 
 numpy.savetxt('/content/drive/My Drive/194310001.csv', temp, fmt='%d',delimiter=',', header='imageId,label')
+
+
+#Test Generator Debugging Technique
+#print(test_generator.classes)
+#print(test_generator.class_indices)
+#print(test_generator.filenames)
+#test_generator.reset()
+#image,label = test_generator.next()
+#import matplotlib.pyplot as plt
+#plt.imshow(image.reshape(20,20,3))
+#plt.show()
