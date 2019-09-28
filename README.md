@@ -14,12 +14,12 @@ The goals / steps of this project are the following:
 ### 1. Submission includes all required files
 
 My project includes the following files:
-* 'Multi Calss Calssification.py' containing the python-Keras code to create, train and test the model
+* 'Multi Class Classification.py' containing the python-Keras code to create, train and test the model
 * output.csv file containing the image filename and the predicted calss
 
 ### 3. Submission code is usable and readable
 
-The "Multi Calss Calssification.py" file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
+The "Multi Class Classification.py" file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
 
 ## Model Architecture and Training Overview
 
