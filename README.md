@@ -13,7 +13,7 @@ The goals / steps of this project are the following:
 
 My project includes the following files:
 * 'Multi Class Classification.py' containing the python-Keras code to create, train and test the model
-* output.csv file containing the image filename and the predicted calss
+* output.csv file containing the image filename and the predicted class
 
 The "Multi Class Classification.py" file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
 
