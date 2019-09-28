@@ -5,7 +5,7 @@
 The goals / steps of this project are the following:
 * Build, a convolution neural network in Keras that performs 3 class classification with one class as none
 * Train and validate the model with a training and validation set
-* Predict the class label of the test data.
+* Predict the class label of the test dataset.
 * Create an output csv file that contains the image filename of test data and the predicted class
 
 
