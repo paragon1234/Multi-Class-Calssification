@@ -65,7 +65,7 @@ My final archtitecture was the Nvidia Architecture, where the car movement from 
 
 ### 2. Final Model Architecture
 
-The final model architecture (model.py lines 54-63) consisted of a convolution neural network with the following layers and layer sizes 
+The final model architecture (lines 31-57) consisted of a convolution neural network with the following layers and layer sizes 
 
 | Layer         		|     Description	        					            | 
 |:-----------------:|:---------------------------------------------:| 
