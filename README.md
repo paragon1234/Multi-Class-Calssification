@@ -68,7 +68,7 @@ The final model architecture (lines 31-57) consisted of a convolution neural net
 | Input         		| 20x20x3 color image   						            | 
 | Convolution 3x3   | same padding, output 20x20x32 	              |
 | RELU					    |												                        |
-| Convolution 3x3   | 2x2 stride, same padding, output 10x20x64 	  |
+| Convolution 3x3   | 2x2 stride, same padding, output 10x10x64 	  |
 | RELU					    |												                        |
 | Convolution 3x3		| 2x2 stride, same padding, output 5x5x128      |
 | RELU					    |												                        |
