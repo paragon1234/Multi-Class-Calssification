@@ -1,4 +1,4 @@
-# Multi-Class-Calssification
+# Multi-Class-Classification
 
 ## Goal
 
