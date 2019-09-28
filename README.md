@@ -79,9 +79,9 @@ The final model architecture (model.py lines 54-63) consisted of a convolution n
 | Flatten				    | outputs 3200 								                  |
 | Fully connected		| Output 512        							              |
 | RELU					    |												                        |
-| Fully connected		| Output 3 									                    |
+| Fully connected		| Output 64 									                  |
 | RELU					    |												                        |
-| Fully connected		| Output 1 										                  |
+| Fully connected		| Output 3                                      |
 | RELU					    |												                        |
 |						        |												                        |
 
