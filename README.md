@@ -27,9 +27,9 @@ The "Multi Class Classification.py" file contains the code for training and savi
 
 My model consists of a 3 convolution neural network with 3x3 filter sizes and depths between 32 and 128 (line 32-46) 
 
-The model includes RELU layers to introduce nonlinearity, and the data is normalized in the model using a Keras batchNorm
+The model includes RELU layers to introduce nonlinearity, and the data is normalized in the model using the Keras batchNorm layer
 
-The image of calss 'aircraft' and 'none' are of 20x20 pixels, while that of class 'ship' are 80x80 pixels. The input to the CNN is 20x20 pixels.
+The image size of class 'aircraft' and 'none' is 20x20 pixels, while that of class 'ship' is 80x80 pixels. The input to the CNN is an image of size 20x20 pixels.
 
 ### 2. Attempts to reduce overfitting in the model
 
