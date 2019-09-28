@@ -47,15 +47,15 @@ I used this training data for training the model. The validation set helped dete
 
 ### 1. Solution Design Approach
 
-The overall strategy for deriving a model architecture was to use different layers so that vehicle stays on track without touching the side lines as if it is safe for the person sitting inside the car while doing actual driving.
+The overall strategy for deriving a model architecture was to use different layers and then find the accuracy on the test dataset.
 
-My first step was to use only a fully connected layer(FCL) and check out the result. It was found that when the vehicle moved on a bridge, whose texture was different from the track, then it hit the side walls.
+I started with a model with 3 Convolution layers and 3 fully connected layers. It also incorporated batch normalization, dropout, early stopping and 30% train- validation split. The model gave 100% accuracy on test dataset.
 
-Then I improved the model by adding a convolution neural network layer(CNN). Using CNN the vehicle successfully traversed the bridge, but it was not able to take sharp turn.
+I then changed train-validation split to 20%. Now the accuracy on test dataset reduced to 99.1%
 
-The next improvement was to use 2 layers of CNN with relu, and 3 FCL. In this case the vehicle was able to slightly turn steering angle on sharp turn, but it still went off the track.
+I then made train-validation split to 30% and removed batchNormalization and droupout layers. The test accuracy was still 100% .
 
-Then taking clue from Nvidia architecture I created a trimmed down architecture: 3 CNN (output depth of 24, 36, 64) with relu units, followed by 4 FCL. In this case the vehicle was safely able to take sharp turn, but it moved from one side of the track to another, like a drunken car.
+I then further reduce the Convolution layers to 2 and fully connected layers to 2 (without batchNorm, droupout and 30% test-validation split). It still result in 100% test accuracy
 
 My final archtitecture was the Nvidia Architecture, where the car movement from one side of track to another reduced. At the end of the process, the vehicle is able to drive autonomously around the track (at 25 speed) without leaving the track.
 
