@@ -72,7 +72,7 @@ I then changed train-validation split back to 30%, and removed batchNormalizatio
 
 I then reduced the Convolution layers to 2 and fully connected layers also to 2 (without batchNorm, droupout and 30% test-validation split). It still result in 100% test accuracy
 
-My final archtitecture was the Nvidia Architecture, where the car movement from one side of track to another reduced. At the end of the process, the vehicle is able to drive autonomously around the track (at 25 speed) without leaving the track.
+My final archtitecture was with 3 Convolution layers and 3 fully connected layers.. At the end, the test accuracy was 100%.
 
 ### 4. Final Model Architecture
 
