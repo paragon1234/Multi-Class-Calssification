@@ -45,7 +45,7 @@ I used this training data for training the model. The validation set helped dete
 
 ## Model Architecture and Training Strategy
 
-### 1. Other importent things to change/check in multiclass (compared to binary classification):
+### 1. Important things to change/check in multiclass (compared to binary classification):
 
 Set class_mode='categorical' in the generator() function(s).
 
