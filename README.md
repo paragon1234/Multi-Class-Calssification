@@ -45,7 +45,17 @@ I used this training data for training the model. The validation set helped dete
 
 ## Model Architecture and Training Strategy
 
-### 1. Solution Design Approach
+### 1.Other importent things to change/check in multiclass (compared to binary classification):
+
+Set class_mode='categorical' in the generator() function(s).
+
+Don't forget that the last dense layer must specify the number of labels (or classes):
+
+model.add(layers.Dense(3, activation='softmax'))
+
+Make sure that activation='softmax' and loss='categorical_crossentropy' is chosen- to suit multiclass problems
+
+### 2. Solution Design Approach
 
 The overall strategy for deriving a model architecture was to use different layers and then find the accuracy on the test dataset.
 
@@ -59,7 +69,7 @@ I then reduced the Convolution layers to 2 and fully connected layers also to 2 
 
 My final archtitecture was the Nvidia Architecture, where the car movement from one side of track to another reduced. At the end of the process, the vehicle is able to drive autonomously around the track (at 25 speed) without leaving the track.
 
-### 2. Final Model Architecture
+### 3. Final Model Architecture
 
 The final model architecture (lines 31-57) consisted of a convolution neural network with the following layers and layer sizes 
 
