@@ -45,7 +45,7 @@ I used this training data for training the model. The validation set helped dete
 
 ## Model Architecture and Training Strategy
 
-### 1.Other importent things to change/check in multiclass (compared to binary classification):
+### 1. Other importent things to change/check in multiclass (compared to binary classification):
 
 Set class_mode='categorical' in the generator() function(s).
 
@@ -55,7 +55,12 @@ model.add(layers.Dense(3, activation='softmax'))
 
 Make sure that activation='softmax' and loss='categorical_crossentropy' is chosen- to suit multiclass problems
 
-### 2. Solution Design Approach
+### 2. Order of test data for prediction
+* It is important to specify shuffle=False in test_datagen.flow_from_directory(), in order to preserve the order of filenames and predictions.
+* If a generator has been set up before, it may be necessary to rest it using test_generator.reset(), else weird outputs will come.
+* Change the value of batch_size in test_datagen.flow_from_directory() from default value (which is batch_size=32 ) to batch_size=1. Then set the steps of predict_generator to the total number of your test images.
+
+### 3. Solution Design Approach
 
 The overall strategy for deriving a model architecture was to use different layers and then find the accuracy on the test dataset.
 
@@ -69,7 +74,7 @@ I then reduced the Convolution layers to 2 and fully connected layers also to 2 
 
 My final archtitecture was the Nvidia Architecture, where the car movement from one side of track to another reduced. At the end of the process, the vehicle is able to drive autonomously around the track (at 25 speed) without leaving the track.
 
-### 3. Final Model Architecture
+### 4. Final Model Architecture
 
 The final model architecture (lines 31-57) consisted of a convolution neural network with the following layers and layer sizes 
 
